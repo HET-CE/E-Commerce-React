@@ -1,5 +1,5 @@
 import React from 'react'
-import Heading from '../Reusable/heading'
+import Heading from '../Reusable/Heading'
 
 export default function Contact() {
     return (

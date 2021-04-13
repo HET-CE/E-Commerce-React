@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Img from 'gatsby-image'
-import Heading from '../Reusable/heading'
+import Heading from '../Reusable/Heading'
 
 const getCaty = items => {
     let holdItems = items.map(items => {
