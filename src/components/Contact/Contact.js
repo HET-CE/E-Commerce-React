@@ -6,7 +6,7 @@ export default function Contact() {
         <section className = "py-3">
             <Heading title = "Contact Us" />
             <div className="col-10 col-sm-8 mx-auto">
-                <form action ="" method = "POST">
+                <form action ="https://formspree.io/f/mqkwazgy" method = "POST">
                     <div className="form-group">
                         <input type="text" name="name" id="name" placeholder = "Name" className = "form-control" required/>
                     </div>

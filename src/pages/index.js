@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Herosection from "../components/Reusable/Herosection"
-import Infoblock from "../components/Reusable/Infoblock"
 import Dualinfoblock from "../components/Reusable/Dualinfoblock"
 import Coursecart from "../components/Cart/Coursecart"
 
@@ -12,25 +11,24 @@ const IndexPage = ({data}) => (
     <SEO title="Home" />
     <Herosection
      img = {data.img.childImageSharp.fluid}
-     title = "I write code" 
-     subtitle = "I love JS, Python" 
+     title = "eCommerce" 
+     subtitle = "Welcome To Our website" 
      heroclass = "hero-background"/>
-     <Infoblock heading = "About Us" />
-     <Coursecart courses = {data.courses} />
+     <Coursecart courses = {data.items} />
      <Dualinfoblock heading = "Our Team" />
   </Layout>
 )
 
 export const query = graphql`
 {
-  img: file(relativePath: {eq: "heromain.png" }){
+  img: file(relativePath: {eq: "E-commerce.jpeg" }){
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   }
-  courses: allContentfulCourses {
+  items: allContentfulItems {
     edges {
       node {
         id
@@ -41,7 +39,7 @@ export const query = graphql`
           description
         }
         image {
-          fixed(width:200, height:120){
+          fixed(width:200, height:200){
             ...GatsbyContentfulFixed_tracedSVG
           }
         }

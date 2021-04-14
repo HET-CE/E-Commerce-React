@@ -12,10 +12,10 @@ const AboutPage = ({data}) => (
     <SEO title="Home" />
     <Herosection
      img = {data.img.childImageSharp.fluid}
-     title = "I write code" 
-     subtitle = "I love JS, Python" 
+     title = "Abouts Us" 
+     subtitle = "" 
      heroclass = "about-background"/>
-     <Dualinfoblock heading = "A Message from CEO" />
+     <Dualinfoblock heading = "" />
      <Infoblock heading = "About our Vision" />
      <TeamPhoto />
   </Layout>

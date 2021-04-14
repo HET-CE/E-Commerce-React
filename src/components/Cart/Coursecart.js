@@ -41,7 +41,7 @@ export default class Coursecart extends Component {
         return (
             <section className = "py-5">
                 <div className="container">
-                    <Heading title = "Courses" />
+                    <Heading title = "Items" />
                     <div className="row my-3">
                         <div className="col-10 mx-auto text-center">
                             {
@@ -67,7 +67,7 @@ export default class Coursecart extends Component {
                                         <div className="flex-grow-1 px-3">
                                             <div className="d-flex">
                                                 <h6 className = "mb-0">{node.title}</h6>
-                                                <h6 className = "mb-0 text-success ml-5">$ {node.price}</h6>
+                                                <h6 className = "mb-0 text-success ml-5">₹ {node.price}</h6>
                                             </div>
                                             <p className="text-muted">
                                                 <small>{node.description.description}</small>
