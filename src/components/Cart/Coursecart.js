@@ -78,7 +78,7 @@ export default class Coursecart extends Component {
                                             data-item-price = {node.price}
                                             data-item-url = "https://learncodeonline.com"
                                             data-image-image = {node.image.fixed.src}
-                                            className="btn btn-warning snipcart-add-item">Join Now</button>
+                                            className="btn btn-warning snipcart-add-item">Add to Cart</button>
                                         </div>
                                     </div>
                                 )

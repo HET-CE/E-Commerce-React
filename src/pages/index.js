@@ -15,7 +15,6 @@ const IndexPage = ({data}) => (
      subtitle = "Welcome To Our website" 
      heroclass = "hero-background"/>
      <Coursecart courses = {data.items} />
-     <Dualinfoblock heading = "Our Team" />
   </Layout>
 )
 

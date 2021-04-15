@@ -17,7 +17,7 @@ const AboutPage = ({data}) => (
      heroclass = "about-background"/>
      <Dualinfoblock heading = "" />
      <Infoblock heading = "About our Vision" />
-     <TeamPhoto />
+     {/* <TeamPhoto /> */}
   </Layout>
 )
 
